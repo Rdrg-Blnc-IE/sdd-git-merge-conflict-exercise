@@ -10,7 +10,9 @@ def calculate_total(
     """Calculate the final total a customer pays for their cart."""
     total = subtotal
 
-    if apply_discount and total > 50:
+    # variable name changed creating conflict
+    # fix error
+    if Apply_discount and total > 50:
         total *= 0.9
 
     if apply_tax:
