@@ -13,6 +13,9 @@ def calculate_total(
     if apply_discount and total > 50:
         total *= 0.9
 
+    if apply_tax:
+        total = total * 1.08
+
     return total
 
 
